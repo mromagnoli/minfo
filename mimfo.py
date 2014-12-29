@@ -6,14 +6,28 @@ import json
 import sys
 
 def get_filenames():
+	""" Retrieve current directory filenames.
+
+	Returns:
+		A list with file names
+	"""
 	from os.path import isfile, join
 	CURRENT_DIR = '.'
 	files = [ f for f in listdir(CURRENT_DIR) if isfile(join(CURRENT_DIR, f)) ]
 	return files
 
+
 def get_ratings(movies):
+	""" Get movie ratings.
+
+	Args:
+		movies: List of movies names
+	Returns:
+		void
+	"""
 	OMDB_URL = 'http://www.omdbapi.com/?t=%s&y=&plot=short&r=json';
 	print 'Retrieving data, please wait...'
+	movies = ['speed', 'frozen.srt', 'zoolander.srt', 'speed.mkv']
 
 	movies = uniquify(movies)
 	for movie in movies:
