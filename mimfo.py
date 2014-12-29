@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+__author__ = "Marce Romagnoli"
+__copyright__ = "Copyright 2015"
+__version__ = "0.1"
+__email__ = "marce.romagnoli@gmail.com"
+
 from os import listdir
 
 import urllib2
