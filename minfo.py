@@ -35,7 +35,7 @@ def get_ratings(movies):
 	"""
 	OMDB_URL = 'http://www.omdbapi.com/?t=%s&y=&plot=short&r=json';
 	print 'Retrieving data, please wait...'
-	movies = ['speed', 'frozen.srt', 'zoolander.srt', 'speed.mkv']
+#	movies = ['speed', 'frozen.srt', 'zoolander.srt', 'speed.mkv'] # Test
 
 	movies = uniquify(movies)
 	for movie in movies:
